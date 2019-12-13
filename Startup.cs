@@ -8,6 +8,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Data;
+using Logic;
+using Data.MySql;
 
 namespace Unpourd
 {
@@ -24,6 +27,11 @@ namespace Unpourd
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddScoped<IPost,PostContext>();
+
+            services.AddScoped<PostManager, PostManager>(_ => new PostManager(new PostContext()));
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

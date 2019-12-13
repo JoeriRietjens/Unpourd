@@ -11,13 +11,16 @@ namespace Unpourd.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly PostManager _mgr;
+
+        public HomeController(PostManager context)
+        {
+            _mgr = context;
+        }
+
         public IActionResult HomePage()
         {
-
-            PostManager postManager = new PostManager(); 
-           
-           
-
+            _mgr.GetAllPosts();
 
             return View();
         }

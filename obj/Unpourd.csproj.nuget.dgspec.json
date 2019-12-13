@@ -29,7 +29,11 @@
         },
         "frameworks": {
           "netcoreapp3.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Joeri\\Unpourd\\Logic\\Logic.csproj": {
+                "projectPath": "C:\\Joeri\\Unpourd\\Logic\\Logic.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -90,11 +94,7 @@
         },
         "frameworks": {
           "netcoreapp3.0": {
-            "projectReferences": {
-              "C:\\Joeri\\Unpourd\\Data\\Data.csproj": {
-                "projectPath": "C:\\Joeri\\Unpourd\\Data\\Data.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -150,6 +150,9 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
+              "C:\\Joeri\\Unpourd\\Data\\Data.csproj": {
+                "projectPath": "C:\\Joeri\\Unpourd\\Data\\Data.csproj"
+              },
               "C:\\Joeri\\Unpourd\\Logic\\Logic.csproj": {
                 "projectPath": "C:\\Joeri\\Unpourd\\Logic\\Logic.csproj"
               }
